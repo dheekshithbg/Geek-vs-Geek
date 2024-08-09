@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import CreatePage from './pages/CreatePage';
 import JoinPage from './pages/JoinPage';
 import MatchPage from './pages/MatchPage';
+import Footer from './components/Footer';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/join" element={<JoinPage />} />
                 <Route path="/match/:sessionId/:username" element={<MatchPage />} />
             </Routes>
+            <Footer />
         </Router>
     );
 }

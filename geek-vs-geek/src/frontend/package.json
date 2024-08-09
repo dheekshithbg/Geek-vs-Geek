@@ -15,12 +15,17 @@
     "@monaco-editor/react": "^4.6.0",
     "@mui/icons-material": "^5.16.5",
     "@mui/material": "^5.16.6",
+    "@stomp/stompjs": "^7.0.0",
     "@supabase/supabase-js": "^2.45.0",
     "axios": "^1.7.3",
     "react": "^18.3.1",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.25.1",
-    "routes": "^2.1.0"
+    "routes": "^2.1.0",
+    "rxjs": "^7.8.1",
+    "sockjs-client": "^1.6.1",
+    "stompjs": "^2.3.3"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

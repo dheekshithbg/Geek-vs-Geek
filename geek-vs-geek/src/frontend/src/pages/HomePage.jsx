@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 const HomePage = () => {
     return (
         <section className='home-container'>
-            <div className='py-7 flex flex-col items-center'>
+            <div className='py-14 flex flex-col items-center'>
                 <h1 className='head-text text-center mb-8'>Geek vs Geek</h1>
-                <p>A competitive Coding arena where programmers compete against each other.</p>
+                <p>Welcome to Geek vs Geek, a competitive coding arena where programmers battle in
+                real-time. Experience live coding battles with instant feedback and track your opponent's progress as
+                you compete. Join now to showcase your skills, challenge fellow coders, and thrive in a dynamic environment!</p>
                 <div className='mt-16 grid grid-cols-2  gap-12 justify-center items-center'>
                     <Link to="/create" className='block-container relative w-48 h-32'>
                         <div className='rounded-xl absolute inset-0 bg-gray-200'></div>

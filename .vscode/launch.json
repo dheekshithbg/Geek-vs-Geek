@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GeekVsGeekApplication<geek-vs-geek>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "io.code.geek_vs_geek.GeekVsGeekApplication",
+            "projectName": "geek-vs-geek",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
