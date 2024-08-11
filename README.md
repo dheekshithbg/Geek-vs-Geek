@@ -11,7 +11,11 @@ _Opponent Progress Tracking:_ Monitor your opponent's progress throughout the ma
 _Session Management:_ Create or join sessions and choose coding questions for competitions.
 
 # Technologies Used
+
 Frontend: React JS, Tailwind CSS
+
 Backend: Spring Boot, WebSocket, STOMP
+
 Database: Supabase
+
 API: Piston API
