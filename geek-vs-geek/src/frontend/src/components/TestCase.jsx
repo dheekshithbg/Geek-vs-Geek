@@ -25,7 +25,7 @@ const TestCase = ({ testCases, editorRef, language, setMatchStatus, sessionId, u
 
   useEffect(() => {
     // Initialize WebSocket connection
-    const socket = new WebSocket('ws://localhost:5000/ws');
+    const socket = new WebSocket(import.meta.env.VITE_API_ROOT_URL);
     const stompClient = Stomp.over(socket);
 
     stompClient.connect({}, (frame) => {

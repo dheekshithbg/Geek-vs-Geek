@@ -65,7 +65,7 @@ const MatchPage = () => {
     fetchSessionAndProblem();
 
     const client = new Client({
-      brokerURL: 'import.meta.env.VITE_API_ROOT_URL',
+      brokerURL: import.meta.env.VITE_API_ROOT_URL,
       onConnect: () => {
         console.log('Connected to WebSocket');
 
@@ -82,6 +82,17 @@ const MatchPage = () => {
           }
           setSnackbarOpen(true);
         });
+
+        const userEnteredMessage = {
+          message: `${username} has entered the arena`,
+          userId: username,
+          type: 'ENTRY',
+        };
+
+        client.publish({
+          destination: `/topic/match/${sessionId}`,
+          body: JSON.stringify(userEnteredMessage),
+        });
       },
       debug: (str) => {
         console.log(str);
@@ -93,13 +104,13 @@ const MatchPage = () => {
     return () => {
       client.deactivate();
     };
-  }, [sessionId]);
+  }, [sessionId, username]);
 
   const onMount = (editor) => {
     editorRef.current = editor;
     editor.focus();
   };
-
+  
   const onSelect = (language) => {
     setLanguage(language);
     setValue(CODE_SNIPPETS[language]);
@@ -124,7 +135,7 @@ const MatchPage = () => {
   return (
     <div className="p-4">
       <div>
-      <h1 className="text-center text-3xl font-bold mb-4">Coding Arena</h1>
+        <h1 className="text-center text-3xl font-bold mb-4">Coding Arena</h1>
         <p>
           Session ID: {sessionId}
           <CopyToClipboard text={sessionId}>
