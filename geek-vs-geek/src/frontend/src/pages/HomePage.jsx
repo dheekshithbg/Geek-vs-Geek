@@ -23,7 +23,7 @@ const HomePage = () => {
                         </div>
                     </Link>
                 </div>
-                <p className='mt-16'>If you'd like to contribute questions, please email us at <a href="mailto:dheekshithbg@gmail.com">dheekshithbg@gmail.com</a>.</p>
+                <p className='mt-16'>If you'd like to contribute questions, please email me at <a href="mailto:dheekshithbg@gmail.com">dheekshithbg@gmail.com</a>.</p>
             </div>
         </section>
     );
