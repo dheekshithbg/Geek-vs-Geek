@@ -26,4 +26,4 @@ Containerization: Docker for easy deployment and scalability.
 
 If you have coding questions you'd like to contribute, please reach out via email at dheekshithbg@gmail.com
 
-You can try the platform at https://geek-vs-geek.vercel.app/
+You can try the platform at https://geekvsgeek.vercel.app/
