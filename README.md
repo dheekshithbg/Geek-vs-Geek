@@ -12,10 +12,18 @@ _Session Management:_ Create or join sessions and choose coding questions for co
 
 # Technologies Used
 
-Frontend: React JS, Tailwind CSS
+Frontend: React JS, Tailwind CSS, Material UI
 
 Backend: Spring Boot, WebSocket, STOMP
 
 Database: Supabase
 
 API: Piston API
+
+Containerization: Docker for easy deployment and scalability.
+
+# Contribution
+
+If you have coding questions you'd like to contribute, please reach out via email at dheekshithbg@gmail.com
+
+You can try the platform at https://geek-vs-geek.vercel.app/
